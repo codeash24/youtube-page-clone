@@ -1,0 +1,151 @@
+.header{
+  height:55px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position:fixed;
+  z-index:100;
+  top:0px;
+  right:0px;
+  left:0px;
+  background-color: white;
+  border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color:grey;
+}
+
+.left-section{
+  display:flex;
+  margin-right:70px;
+  align-items: center;
+}
+
+.hamburger-menu{
+  height:25px;
+  margin-inline:25px;
+  cursor: pointer;
+}
+
+.logo{
+  height:20px;
+  cursor: pointer;
+}
+
+.middle-section{
+  display:flex;
+  align-items: center;
+  flex:1;
+  margin-right:30px;
+  max-width:500px;
+}
+
+.search{
+  border-width:2px;
+  border-style: solid;
+  border-color:rgb(192, 192, 192);
+  background-color: rgb(240, 240, 240);
+  margin-left:-1px;
+  margin-right:10px;
+  height:40px;
+  width:66px;
+  position: relative;
+  cursor: pointer;
+}
+
+.voice{
+  display: flex;
+  position: relative;
+}
+
+.search .tooltip, .voice .tooltip{
+  position:absolute;
+  bottom:-30px;
+  width:auto;
+  background-color: rgba(128, 128, 128, 0.786);
+  color:white;
+  padding-inline: 4px;
+  padding-block:2px;
+  opacity:0;
+  transition:opacity 0.15s;
+  white-space: nowrap;
+  pointer-events: none; 
+  /* helps to avoid the tooltip from popping up when hovering over its placement */
+}
+
+.search:hover .tooltip, .voice:hover .tooltip{
+  opacity:1;
+}
+
+.searchicon{
+  height:25px;
+  padding-top:1px;
+  padding-inline:5px;
+
+}
+
+.search-bar{
+  flex:1;
+  height:35px;
+  padding-left:10px;
+  font-size:16px;
+  /* border-width:1px;
+  border-style: solid;
+  border-color:rgb(192, 192, 192); */
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0, 0.05);
+  width:0;  
+  /* this lets the search bar shrink with decrease in width */
+}
+
+.search-bar::placeholder{
+  font-family: roboto,arial;
+  margin-left:100px;
+}
+
+.voice{
+  display: flex;
+  height: 40px;
+  width:40px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  border:none;
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+
+.last-section{
+  display:flex;
+  justify-content:space-between;
+  width:200px;
+  flex-shrink: 0;
+  margin-right:20px;
+}
+
+.upload, .bell, .profile, .apps{
+  height:30px;
+  width:30px;
+  margin:0px;
+}
+
+.upload-button, .bell-button, .apps-button, .profile-button{
+  border:0px;
+  background-color: transparent;
+}
+
+.bell-button{
+  position:relative;
+}
+
+.notifications{
+  position:absolute;
+  border-radius:10px;
+  background-color: rgb(200, 15, 15);
+  text-align: center;
+  color:white;
+  right:0;
+  width:15px;
+  height:15px;
+  font-size: smaller;
+}
