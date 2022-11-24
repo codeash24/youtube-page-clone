@@ -2,5 +2,5 @@
 <br>
 
 ***
->A youtube clone done with vanilla HTML and CSS.
+A youtube clone done with vanilla HTML and CSS.
 ***
